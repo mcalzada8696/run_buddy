@@ -3,12 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
- 
-  .flex-row {
-    display:flex;
-  }
   
-
   .intro p {
     margin: 0 auto;
     line-height: 1.7;
@@ -24,8 +19,9 @@
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    display: inline-block;
+    display:flex;
     border-color: #fce138;
+    align-items: center;
   }
   body {
     /* more on this crazy alphanumerical value in a minute! */
@@ -250,6 +246,7 @@
   .step h3 {
     color: #024e76;
     font-size: 46px;
+    flex: 1 30%;
   }
 
   .step-text h4 {
@@ -261,6 +258,24 @@
   .step-text p {
     color: #39a6b2;
     font-size: 18px;
+  }
+
+  .step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+  }
+
+  .step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .step-img {
+    flex: 1 12%;
+    margin-right: 20%;
   }
 
   .section-title {
@@ -326,7 +341,9 @@
   color: #fce138;
 }
 
-
+.flex-row {
+  display:flex;
+}
 
 
 /* REACH OUT STYLES END */
